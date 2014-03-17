@@ -1,0 +1,63 @@
+/*!
+* Webform Normalize v.1.0.0
+* Copyright (c) 2013 Giovanni Buffa
+* MIT License: http://www.opensource.org/licenses/mit-license.php
+*/
+
+/* Comment checkbox and radio buttons if you want to show in standard mode */
+/* Change image urls and dimension of the elemnts based on your design */
+/* Its recommanded, also, one of this modules:
+* - https://drupal.org/project/css_browser_selector
+* - https://drupal.org/project/browserclass
+* for a better fallback in IE8 browser */
+
+@mixin reset-border-radius(){
+  -moz-border-radius:0;
+  -webkit-border-radius:0;
+  -ms-border-radius:0;
+  -o-border-radius:0;
+  border-radius:0;
+}
+
+.webform-client-form{
+  padding:0;
+  margin:0;
+  
+  fieldset{margin:0 0 15px 0;}
+  
+  .form-item{margin:0;}
+  
+  .webform-component{
+    /* Change the width to adapt of your design! */
+    padding:0;
+    width:187px;
+    overflow:hidden;
+    margin:0;
+  }
+  
+  .form-required{color:#000;}
+  
+  @import "_label";
+  @import "_textfield";
+  @import "_textarea";
+  @import "_select";
+  @import "_checkbox";
+  @import "_submit";
+}
+
+/* Fallback for IE8 browser */
+/* Comment this lines if you want to show in standard mode */
+
+.ie8{
+  .webform-client-form{
+    input[type="checkbox"],
+    input[type="radio"]{
+      display:inline;
+      + label:before{display:none;}
+    }
+  }
+}
+
+/*SPECIFIC FIELDS*/
+
+/* Insert here the specific style apply of specific fields */

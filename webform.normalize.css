@@ -1,197 +1,176 @@
-/*WEBFORM*/
-
-.webform-client-form{}
-
-.webform-client-form fieldset{
-margin:0 0 15px 0;
-}
-
-.webform-client-form .form-item{
-margin:0;
-}
-
-/* Change the width to adapt of your design! */
-
-.webform-client-form .webform-component{
-padding:0;
-width:187px;
-overflow:hidden;
-margin:0;
-}
-
-.webform-client-form .webform-component-checkboxes{
-background:none;
-width:100%;
-padding:0;
-}
-
-.webform-client-form label{
-display:block;
-font-weight:normal;
-font-size:1em;
-color:#000;
-margin:0 0 6px 0;
-}
-
-.webform-client-form label.option{
-display:inline;
-font-size:0.9em;
-color:#000;
-}
-
-.webform-client-form label.option a{
-color:#000;
-}
-
-.webform-client-form .form-required{
-color:#000;
-}
-
-.webform-client-form input.form-text{
-border-style:solid;
-border-color:#000;
-border-width:1px;
-height:20px;
-padding:0;
-width:185px;
--webkit-border-radius:0;
-border-radius:0;
-}
-
-.webform-client-form input.form-text:focus{}
-
-/* Use background image here if you wanto to apply an image for select */
-/* background:url(images/select_arrow.gif) right bottom no-repeat; */
-
-.webform-client-form .webform-component-select{}
-
-/* add width > 100% to hide the select default grapghic */
-
-.webform-client-form select.form-select{
-width:100%;
-background:none;
-border:1px solid #000;
-background:transparent;
-cursor:pointer;
--webkit-appearance:none;
-padding:3px;
--moz-border-radius:0;
--webkit-border-radius:0;
-border-radius:0;
-}
-
-.webform-client-form .form-disabled{
-opacity:0.5;
-}
-
-.webform-client-form .form-disabled select.form-select{
-cursor:default;
-}
-
-.webform-client-form textarea.form-textarea{
-border-style:solid;
-border-color:#000;
-border-width:1px;
-resize:none;
-width:99.9%;
--webkit-border-radius:0;
-border-radius:0;
-}
-
-/* Uncomment this lines if you wanto styling checkbox and rodio buttons */
+/*!
+* Webform Normalize v.1.0.0
+* Copyright (c) 2013 Giovanni Buffa
+* MIT License: http://www.opensource.org/licenses/mit-license.php
+*/
+/* Comment checkbox and radio buttons if you want to show in standard mode */
 /* Change image urls and dimension of the elemnts based on your design */
 /* Its recommanded, also, one of this modules:
 * - https://drupal.org/project/css_browser_selector
 * - https://drupal.org/project/browserclass
 * for a better fallback in IE8 browser */
-
-/*.webform-client-form input[type="checkbox"],
-.webform-client-form input[type="radio"]{
-display:none;
+.webform-client-form {
+  padding: 0;
+  margin: 0;
+}
+.webform-client-form fieldset {
+  margin: 0 0 15px 0;
+}
+.webform-client-form .form-item {
+  margin: 0;
+}
+.webform-client-form .webform-component {
+  /* Change the width to adapt of your design! */
+  padding: 0;
+  width: 187px;
+  overflow: hidden;
+  margin: 0;
+}
+.webform-client-form .form-required {
+  color: #000;
+}
+.webform-client-form label {
+  display: block;
+  font-weight: normal;
+  font-size: 1em;
+  color: #000;
+  margin: 0 0 6px 0;
+}
+.webform-client-form label.option {
+  display: inline;
+  font-size: 0.9em;
+  color: #000;
+}
+.webform-client-form label.option a {
+  color: #000;
+}
+.webform-client-form input.form-text {
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+  height: 20px;
+  padding: 0;
+  width: 185px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.webform-client-form input.form-text:hover, .webform-client-form input.form-text:focus {
+  /* Apply :hover and :focus style */
+}
+.webform-client-form textarea.form-textarea {
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+  resize: none;
+  width: 99.9%;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.webform-client-form textarea.form-textarea:hover, .webform-client-form textarea.form-textarea:focus {
+  /* Apply :hover and :focus style */
+}
+.webform-client-form .webform-component-select {
+  /* Use background image here if you wanto to apply an image for select */
+  /* background:url(images/select_arrow.gif) right bottom no-repeat; */
+}
+.webform-client-form select.form-select {
+  /* add width > 100% to hide the select default grapghic */
+  width: 100%;
+  background: none;
+  border: 1px solid #000;
+  background: transparent;
+  cursor: pointer;
+  -webkit-appearance: none;
+  padding: 3px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.webform-client-form .form-disabled {
+  opacity: 0.5;
+}
+.webform-client-form .form-disabled select.form-select {
+  cursor: default;
+}
+.webform-client-form .webform-component-checkboxes {
+  background: none;
+  width: 100%;
+  padding: 0;
+}
+.webform-client-form input[type="checkbox"], .webform-client-form input[type="radio"] {
+  display: none;
+}
+.webform-client-form input[type="checkbox"] + label:before, .webform-client-form input[type="radio"] + label:before {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  background: url(images/checkbox_bg.gif) left top no-repeat;
+  cursor: pointer;
+  margin: -1px 3px 0 0;
+  content: "";
+}
+.webform-client-form input[type="checkbox"]:checked + label:before, .webform-client-form input[type="radio"]:checked + label:before {
+  background-position: -18px 0;
+}
+.webform-client-form input[type="radio"] + label:before {
+  background: url(images/checkbox_bg.gif) left top no-repeat;
+}
+.webform-client-form #edit-actions {
+  margin: 12px 0;
+}
+.webform-client-form input.form-submit {
+  background: #000;
+  color: #fff;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  padding: 6px;
+  min-width: 75px;
+  cursor: pointer;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.webform-client-form input.form-submit:hover, .webform-client-form input.form-submit:focus {
+  background: #fff;
+  color: #000;
+}
+.webform-client-form input.form-button-disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.webform-client-form input.form-button-disabled:hover, .webform-client-form input.form-button-disabled:focus {
+  background: #e57116;
+  color: #fff;
+}
+.webform-client-form .inline-loading {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(images/loader.gif) no-repeat;
 }
 
-.ie8 .webform-client-form input[type="checkbox"],
-.ie8 .webform-client-form input[type="radio"]{
-display:inline;
+/* Fallback for IE8 browser */
+/* Comment this lines if you want to show in standard mode */
+.ie8 .webform-client-form input[type="checkbox"], .ie8 .webform-client-form input[type="radio"],
+.ie8 .webform-client-form input[type="radio"] {
+  display: inline;
 }
-
-.webform-client-form input[type="checkbox"] + label:before{
-display:inline-block;
-width:18px;
-height:18px;
-vertical-align:middle;
-background:url(images/checkbox_bg.gif) left top no-repeat;
-cursor:pointer;
-margin:-1px 3px 0 0;
-content:"";
-}
-
-.webform-client-form input[type="radio"] + label:before{
-display:inline-block;
-width:18px;
-height:18px;
-vertical-align:middle;
-background:url(images/checkbox_bg.gif) left top no-repeat;
-cursor:pointer;
-margin:-1px 3px 0 0;
-content:"";
-}
-
-.ie8 .webform-client-form input[type="checkbox"] + label:before,
-.ie8 .webform-client-form input[type="radio"] + label:before{
-display:none;
-}
-
-.webform-client-form input[type="checkbox"]:checked + label:before{
-background-position:-18px 0;
-}
-
-.webform-client-form input[type="radio"]:checked + label:before{
-background-position:-18px 0;
-}*/
-
-.webform-client-form #edit-actions{
-margin:12px 0;
-}
-
-.webform-client-form input.form-submit{
-background:#000;
-color:#fff;
-border:none;
-text-align:center;
-font-weight:bold;
-padding:6px;
-min-width:75px;
-cursor:pointer;
--webkit-appearance:button;
--webkit-border-radius:0;
-border-radius:0;
-}
-
-.webform-client-form input.form-submit:hover,
-.webform-client-form input.form-submit:focus{
-background:#fff;
-color:#000;
-}
-
-.webform-client-form input.form-button-disabled{
-opacity:0.5;
-cursor:default;
-}
-
-.webform-client-form input.form-button-disabled:hover,
-.webform-client-form input.form-button-disabled:focus{
-background:#e57116;
-color:#fff;
-}
-
-.inline-loading{
-display:block;
-width:32px;
-height:32px;
-background:url(images/loader.gif) no-repeat;
+.ie8 .webform-client-form input[type="checkbox"] + label:before, .ie8 .webform-client-form input[type="radio"] + label:before,
+.ie8 .webform-client-form input[type="radio"] + label:before {
+  display: none;
 }
 
 /*SPECIFIC FIELDS*/
-
 /* Insert here the specific style apply of specific fields */

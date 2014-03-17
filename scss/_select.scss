@@ -1,0 +1,22 @@
+.webform-component-select{
+  /* Use background image here if you wanto to apply an image for select */
+  /* background:url(images/select_arrow.gif) right bottom no-repeat; */
+}
+
+select.form-select{
+  /* add width > 100% to hide the select default grapghic */
+  width:100%;
+  background:none;
+  border:1px solid #000;
+  background:transparent;
+  cursor:pointer;
+  -webkit-appearance:none;
+  padding:3px;
+  @include reset-border-radius();
+}
+
+.form-disabled{
+  opacity:0.5;
+  
+  select.form-select{cursor:default;}
+}

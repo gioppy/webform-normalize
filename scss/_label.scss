@@ -1,0 +1,15 @@
+label{
+  display:block;
+  font-weight:normal;
+  font-size:1em;
+  color:#000;
+  margin:0 0 6px 0;
+  
+  &.option{
+    display:inline;
+    font-size:0.9em;
+    color:#000;
+    
+    a{color:#000;}
+  }
+}

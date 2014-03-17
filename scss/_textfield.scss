@@ -1,0 +1,14 @@
+input.form-text{
+    border-style:solid;
+    border-color:#000;
+    border-width:1px;
+    height:20px;
+    padding:0;
+    width:185px;
+    @include reset-border-radius();
+    
+    &:hover,
+    &:focus{
+      /* Apply :hover and :focus style */
+    }
+  }

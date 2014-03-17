@@ -1,0 +1,13 @@
+textarea.form-textarea{
+  border-style:solid;
+  border-color:#000;
+  border-width:1px;
+  resize:none;
+  width:99.9%;
+  @include reset-border-radius();
+  
+  &:hover,
+  &:focus{
+    /* Apply :hover and :focus style */
+  }
+}
