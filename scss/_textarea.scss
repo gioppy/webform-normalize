@@ -1,13 +1,14 @@
-textarea.form-textarea{
-  border-style:solid;
-  border-color:#000;
-  border-width:1px;
+.form-textarea{
+  border:1px solid $vw-textarea-color;
   resize:none;
-  width:99.9%;
+  width:100%;
+  height:$vw-textarea-height;
+  box-sizing:border-box;
   @include reset-border-radius();
+  transition:border-color .3s;
   
   &:hover,
   &:focus{
-    /* Apply :hover and :focus style */
+    border-color:$vw-textarea-focus-color;
   }
 }

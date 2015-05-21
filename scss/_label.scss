@@ -1,15 +1,13 @@
 label{
   display:block;
-  font-weight:normal;
-  font-size:1em;
-  color:#000;
+  color:$vw-label-color;
   margin:0 0 6px 0;
   
   &.option{
     display:inline;
     font-size:0.9em;
-    color:#000;
+    color:$vw-label-color;
     
-    a{color:#000;}
+    a{color:$vw-label-color;}
   }
 }

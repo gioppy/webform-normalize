@@ -1,14 +1,15 @@
-input.form-text{
-    border-style:solid;
-    border-color:#000;
-    border-width:1px;
-    height:20px;
-    padding:0;
-    width:185px;
-    @include reset-border-radius();
-    
-    &:hover,
-    &:focus{
-      /* Apply :hover and :focus style */
-    }
+.form-text{
+  border:1px solid $vw-textfield-color;
+  height:$vw-textfield-height;
+  padding:0;
+  width:100%;
+  box-sizing:border-box;
+  -webkit-appearance:none;
+  @include reset-border-radius();
+  transition:border-color .3s;
+  
+  &:hover,
+  &:focus{
+    border-color:$vw-textfield-focus-color;
   }
+}

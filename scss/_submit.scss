@@ -1,32 +1,31 @@
-#edit-actions{margin:12px 0;}
+.form-actions{
+  margin:12px 0;
+}
 
-input.form-submit{
-  background:#000;
-  color:#fff;
+.form-submit{
+  background:$vw-submit-background;
+  color:$vw-submit-color;
   border:none;
   text-align:center;
   font-weight:bold;
   padding:6px;
   min-width:75px;
   cursor:pointer;
+  -webkit-appearance:none;
+  box-sizing:border-box;
   @include reset-border-radius();
+  transition:background .3s, color .4s;
   
   &:hover,
   &:focus{
-    background:#fff;
-    color:#000;
+    background:$vw-submit-focus-background;
+    color:$vw-submit-focus-color;
   }
 }
 
-input.form-button-disabled{
+.form-button-disabled{
   opacity:0.5;
   cursor:default;
-  
-  &:hover,
-  &:focus{
-    background:#e57116;
-    color:#fff;
-  }
 }
 
 .inline-loading{
