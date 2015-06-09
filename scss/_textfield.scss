@@ -1,15 +1,15 @@
 .form-text{
-  border:1px solid $vw-textfield-color;
-  height:$vw-textfield-height;
-  padding:0;
-  width:100%;
-  box-sizing:border-box;
-  -webkit-appearance:none;
-  @include reset-border-radius();
-  transition:border-color .3s;
+  border: 1px solid $vw-textfield-color;
+  height: $vw-textfield-height;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  border-radius: 0;
+  transition: border-color .3s;
   
   &:hover,
   &:focus{
-    border-color:$vw-textfield-focus-color;
+    border-color: $vw-textfield-focus-color;
   }
 }

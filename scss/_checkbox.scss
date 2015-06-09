@@ -1,34 +1,35 @@
 .webform-component-checkboxes{
-  width:100%;
+  width: 100%;
 }
 
 .form-checkbox{
-  display:none;
+  display: none;
   
   + label:before{
-    display:inline-block;
-    width:$vw-checkbox-size;
-    height:$vw-checkbox-size;
-    vertical-align:middle;
-    border:1px solid $vw-checkbox-color;
-    cursor:pointer;
-    margin:-1px 3px 0 0;
-    content:"";
-    font-weight:bold;
-    font-size:$vw-checkbox-size;
-    line-height:1;
-    text-align:center;
+    display: inline-block;
+    width: $vw-checkbox-size;
+    height: $vw-checkbox-size;
+    vertical-align: middle;
+    border: 1px solid $vw-checkbox-color;
+    cursor: pointer;
+    margin: -1px 3px 0 0;
+    content: "";
+    font-weight: bold;
+    font-size: $vw-checkbox-size;
+    line-height: 1;
+    text-align: center;
   }
   
   &:checked + label:before{
-    content:"×";
+    content: "×";
   }
 }
 
 .form-radio{
   @extend input[type="checkbox"];
+  border-radius: 50%;
   
-   + label:before{
-     background:url(images/checkbox_bg.gif) left top no-repeat;
-   }
+   &:checked + label:before{
+    content: "·";
+  }
 }

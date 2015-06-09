@@ -1,36 +1,36 @@
 .form-actions{
-  margin:12px 0;
+  margin: 12px 0;
 }
 
 .form-submit{
-  background:$vw-submit-background;
-  color:$vw-submit-color;
-  border:none;
-  text-align:center;
-  font-weight:bold;
-  padding:6px;
-  min-width:75px;
-  cursor:pointer;
-  -webkit-appearance:none;
-  box-sizing:border-box;
-  @include reset-border-radius();
-  transition:background .3s, color .4s;
+  background: $vw-submit-background;
+  color: $vw-submit-color;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  padding: 6px;
+  min-width: 75px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border-radius: 0;
+  transition: background .3s, color .4s;
   
   &:hover,
   &:focus{
-    background:$vw-submit-focus-background;
-    color:$vw-submit-focus-color;
+    background: $vw-submit-focus-background;
+    color: $vw-submit-focus-color;
   }
 }
 
 .form-button-disabled{
-  opacity:0.5;
-  cursor:default;
+  opacity: 0.5;
+  cursor: default;
 }
 
 .inline-loading{
-  display:block;
-  width:32px;
-  height:32px;
+  display: block;
+  width: 32px;
+  height: 32px;
   background:url(images/loader.gif) no-repeat;
 }

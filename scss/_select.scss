@@ -5,18 +5,18 @@
 
 select.form-select{
   /* add width > 100% to hide the select default grapghic */
-  width:100%;
-  background:none;
-  border:1px solid #000;
-  background:transparent;
-  cursor:pointer;
-  -webkit-appearance:none;
-  padding:3px;
-  @include reset-border-radius();
+  width: 100%;
+  background: none;
+  border: 1px solid #000;
+  background: transparent;
+  cursor: pointer;
+  -webkit-appearance: none;
+  padding: 3px;
+  border-radius: 0;
 }
 
 .form-disabled{
-  opacity:0.5;
+  opacity: 0.5;
   
-  select.form-select{cursor:default;}
+  select.form-select{cursor: default;}
 }

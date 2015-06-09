@@ -6,54 +6,52 @@
 
 /* Settings */
 
-$vw-component-lenght:185px;
+//The length of the container of one field
+$vw-component-lenght: 185px;
 
-$vw-label-color:#000;
+//Tabels
+$vw-label-color: #000;
 
-$vw-textfield-color:#000;
-$vw-textfield-focus-color:#999;
-$vw-textfield-height:20px;
+//Textfields
+$vw-textfield-color: #000;
+$vw-textfield-focus-color: #999;
+$vw-textfield-height: 20px;
 
-$vw-textarea-color:#000;
-$vw-textarea-focus-color:#999;
-$vw-textarea-height:auto;
+//Textareas
+$vw-textarea-color: #000;
+$vw-textarea-focus-color: #999;
+$vw-textarea-height: auto;
 
-$vw-checkbox-size:18px;
-$vw-checkbox-color:#000;
-$vw-checkbox-background:#000;
+//Checkboxes
+$vw-checkbox-size: 18px;
+$vw-checkbox-color: #000;
+$vw-checkbox-background: #000;
 
-$vw-submit-color:#fff;
-$vw-submit-background:#000;
-$vw-submit-focus-color:#000;
-$vw-submit-focus-background:#fff;
-
-@mixin reset-border-radius(){
-  -moz-border-radius:0;
-  -webkit-border-radius:0;
-  -ms-border-radius:0;
-  -o-border-radius:0;
-  border-radius:0;
-}
+//Submit
+$vw-submit-color: #fff;
+$vw-submit-background: #000;
+$vw-submit-focus-color: #000;
+$vw-submit-focus-background: #fff;
 
 .webform-client-form{}
 
 .webform-component-fieldset{
-  margin:0 0 15px 0;
+  margin: 0 0 15px 0;
 }
 
-.form-required{color:#000;}
+.form-required{color: #000;}
 
 .webform-component{
-  width:$vw-component-lenght;
-  overflow:hidden;
+  width: $vw-component-lenght;
+  overflow: hidden;
 }
 
-@import "_label";
-@import "_textfield";
-@import "_textarea";
-@import "_select";
-@import "_checkbox";
-@import "_submit";
+@import "label";
+@import "textfield";
+@import "textarea";
+@import "select";
+@import "checkbox";
+@import "submit";
 
 /* Fallback for IE8 browser */
 /* Comment this lines if you want to show in standard mode */
@@ -62,8 +60,8 @@ $vw-submit-focus-background:#fff;
   .webform-client-form{
     input[type="checkbox"],
     input[type="radio"]{
-      display:inline;
-      + label:before{display:none;}
+      display: inline;
+      + label:before{display: none;}
     }
   }
 }
