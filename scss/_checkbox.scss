@@ -4,7 +4,7 @@
 
 .form-checkbox{
   display: none;
-  
+
   + label:before{
     display: inline-block;
     width: $vw-checkbox-size;
@@ -19,16 +19,16 @@
     line-height: 1;
     text-align: center;
   }
-  
+
   &:checked + label:before{
     content: "×";
   }
 }
 
 .form-radio{
-  @extend input[type="checkbox"];
+  @extend .form-checkbox;
   border-radius: 50%;
-  
+
    &:checked + label:before{
     content: "·";
   }
